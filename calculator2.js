@@ -4,6 +4,7 @@ var nearley = require("nearley");
 var grammar = require("./grammar2.js");
 
 
+console.log('Initial data:', grammar.ParserRules, grammar.ParserStart)
 ans = new nearley.Parser(grammar.ParserRules, grammar.ParserStart).feed('3 * 2');
 consoel.log('Result:', ans)
 

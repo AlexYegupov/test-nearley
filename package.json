@@ -5,6 +5,7 @@
   },
   "scripts": {
     "start": "./build-and-test2.sh",
-    "test": "$(npm bin)/nearley-test -i '2 * 3' ./grammar2.js"
+    "test": "$(npm bin)/nearley-test -i '2 * 3' ./grammar2.js",
+    "railroad": "$(npm bin)/nearley-railroad ./arithmetic2.ne -o ./railroad.html"
   }
 }
