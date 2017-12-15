@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "moo": "^0.4.3",
+    "nearley": "^2.11.0"
+  },
+  "scripts": {
+    "start": "./build-and-test2.sh"
+  }
+}

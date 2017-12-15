@@ -1,0 +1,10 @@
+dist
+node_modules
+./dist/*
+public/js/main.js
+public/*.html
+.idea
+*/.DS_Store
+public/build.txt
+
+.tern-port
