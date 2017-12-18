@@ -4,9 +4,15 @@ var nearley = require("nearley");
 var grammar = require("./grammar2.js");
 
 
-console.log('Initial data:', grammar.ParserRules, grammar.ParserStart)
-ans = new nearley.Parser(grammar.ParserRules, grammar.ParserStart).feed('3 * 2');
-consoel.log('Result:', ans)
+
+const parser = new nearley.Parser(nearley.Grammar.fromCompiled(grammar));
+let ans = parser.feed("3 * 2");
+
+// nw (https://github.com/Hardmath123/nearley/issues/331#issuecomment-352356968)
+//console.log('Initial data:', grammar.ParserRules, grammar.ParserStart)
+//ans = new nearley.Parser(grammar.ParserRules, grammar.ParserStart).feed('3 * 2');
+
+console.log('Result:', ans.results[0])
 
 /* 
  * 
